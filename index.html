@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>corporate Interfaces</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">revou<span class="highlight">CORP</span></div>
+      <ul class="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <header id="home">
+      <div class="banner-content">
+        <h1>Hi<span id="user-greeting">User</span>, welcome to corporation</h1>
+        <p>the future through design and website</p>
+      </div>
+    </header>
+    <section id="profile">
+      <h2>Our Headquarters</h2>
+      <div class="profile-container">
+        <div class="profile-card">
+          <div class="circle-icon"></div>
+          <h3>Vision</h3>
+          <p>Menjadi pionir dalam integrasi teknologi dan efisiensi sistem.</p>
+        </div>
+        <div class="profile-card">
+          <div class="circle-icon"></div>
+          <h3>Mission</h3>
+          <p>Mengembangkan kerangka kerja yang aman, cepat, dan logis.</p>
+        </div>
+        <div class="profile-card">
+          <div class="circle-icon"></div>
+          <h3>Strategy</h3>
+          <p>Optimasi berkelanjutan melalui protokol</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message-us">
+      <div class="form-wrapper">
+        <div class="form-header">
+          <h2>Message Us</h2>
+          <p>Initiate contact sequence.</p>
+        </div>
+
+        <form name="message-form" onsubmit="return validateForm()">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" placeholder="Enter identification..." />
+
+          <label for="birthdate">Tanggal Lahir:</label>
+          <input type="date" id="birthdate" />
+
+          <label for="gender">Jenis Kelamin:</label>
+          <div class="radio-group"><input type="radio" name="gender" value="Laki-laki" /> Laki-laki <input type="radio" name="gender" value="Perempuan" /> Perempuan</div>
+
+          <label for="message">Pesan:</label>
+          <textarea id="message" placeholder="Input logical query..."></textarea>
+
+          <button type="submit" class="submit-btn">Submit Data</button>
+        </form>
+
+        <div class="output-display" id="result-display">
+          <h3>Data Summary:</h3>
+          <p><strong>Current Time:</strong> <span id="sender-time"></span></p>
+          <p><strong>Name:</strong> <span id="sender-name"></span></p>
+          <p><strong>DOB:</strong> <span id="sender-dob"></span></p>
+          <p><strong>Gender:</strong> <span id="sender-gender"></span></p>
+          <p><strong>Message:</strong> <span id="sender-msg"></span></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Created by Swandaru Tirta Sandhika | developer Architect at Corporation © 2026</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
